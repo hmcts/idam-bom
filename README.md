@@ -11,13 +11,13 @@ There are 2 ways to use the BOM file:
 ```xml
 <project ...>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>uk.gov.hmcts</groupId>
+    <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-state-of-the-art-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>IdAM State of the Art</name>
     <parent>
-        <groupId>uk.gov.hmcts</groupId>
+        <groupId>uk.gov.hmcts.reform.idam</groupId>
         <artifactId>idam-bom</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -28,7 +28,7 @@ There are 2 ways to use the BOM file:
 ```xml
 <project ...>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>uk.gov.hmcts</groupId>
+    <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-state-of-the-art-project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -37,7 +37,7 @@ There are 2 ways to use the BOM file:
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>uk.gov.hmcts</groupId>
+                <groupId>uk.gov.hmcts.reform.idam</groupId>
                 <artifactId>idam-bom</artifactId>
                 <version>1.0.0</version>
                 <type>pom</type>
@@ -69,7 +69,7 @@ project *before* the `idam-bom` entry.
             <version>2.12.0</version>
         </dependency>
         <dependency>
-            <groupId>uk.gov.hmcts</groupId>
+            <groupId>uk.gov.hmcts.reform.idam</groupId>
             <artifactId>idam-bom</artifactId>
             <version>1.0.0</version>
             <type>pom</type>
