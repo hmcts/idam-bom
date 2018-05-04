@@ -1,0 +1,36 @@
+plugins {
+  id 'maven-publish'
+}
+
+Node bom = new XmlParser(false, false).parse(file('pom.xml'))
+group = bom.groupId.text()
+version = bom.version.text()
+
+publishing {
+  publications {
+    'idam-bom'(MavenPublication) {
+      pom.withXml {
+        def root = asNode()
+
+        bom.each { tag ->
+          def name = "{http://maven.apache.org/POM/4.0.0}${tag.name()}"
+          def node = root.children().find { it.name().toString() == name }
+
+          if (node != null) {
+            // Replace any tags gradle's default pom contains with those of our bom
+            println "Replacing tag: ${node.name()}"
+            node.replaceNode(tag)
+          } else {
+            // Add additional tags from our bom
+            println "Adding tag: ${tag.name()}"
+            root.append(tag)
+          }
+        }
+      }
+    }
+  }
+
+  repositories {
+    // TODO Add bintray entry
+  }
+}
