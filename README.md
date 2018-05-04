@@ -1,5 +1,7 @@
 # IdAM BOM
 
+[![Build Status](https://travis-ci.org/hmcts/idam-bom.svg?branch=master)](https://travis-ci.org/hmcts/idam-bom)
+
 The IdAM BOM project provides Maven BOM file that can be used for managing the versions of the dependencies in IdAM 
 projects. This would ensure all projects always use a compatible stack.
                                              
