@@ -6,8 +6,9 @@ cache:
   directories:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
+install: true
 script:
-- ./gradlew build
+- ./gradlew publishToMavenLocal
 deploy:
 - provider: script
   script: ./gradlew bintrayUpload
@@ -15,3 +16,7 @@ deploy:
   on:
     repo: hmcts/idam-bom
     tags: true
+env:
+  global:
+  - secure: oyijKuCac93qI0KgslGBJoroDiXbOFW8LJWxPbba0gTx4N+Wtanjlx2/7jOlIdrVu7YjLhcyhbYTh0N2OiwG1+Zo6M2sAEMBHlBebn6E7eSUIAXG48vfbfgaLWeOabe7le+ahkUOPMfzKMTaLEF04Km0GyXUiqFbkFNjpo9lbhkv+9Futwfv6Bkww8pNu142hK3b8SJRK6U5eSDAdbfXRzPp3VDT5LypnEaMqM9k3HHjltdOzflsuMnpAhz+tAe9sLH17mi/HSosDFcLqBXVC6lBrIA9V5E+2at3B+CeU1BM6vmMEXrFhjqwdgzmkAuKJ0rwsxaur/McnNESpGuwjXxJE+8Cla/wYBwJWTIIbbO54kZOkVn9tPFknmcvd5j6L0oLypHennJ2IIK4As0bQA5i+DnRBCg0M9BVNyUYzXYrKI1ZtQRVIP1wlMV6pskgTliFYABbPofGa2enO9qO0BYGgZfQGi0mihLaKyINI/JCGOk/T26hsbvvUDOOxccF5bZktTcm9qh0tmpbsFgLuQOZIuaV6j016X2L2hJnlGDC84dZD2KewF5kwFpy5LgGV/GmmAa33XbxyNNIdCulufPDA7VpUeX7iucyOQbG0rIjj748iyZWjrbZywzB2KgMFXdG08W+V7ul5MJLQ+QYVCjormleV4yGj8hVQnQ8xew=
+  - secure: oIUV4tBqfCysuYYc2csME8YJFUcAlyKD+Qkh8jxhP9euVEMtLgIAXmYXeICG++ltwKGY7vlhvIRT/R7j1z25qelwjCKFI6lb5ZpEgeJ9ISs0IzsZYoRDKNjcrUl8xXreaDvpKXYiIXr0fCXl6Jr4ivyWMY/F2hfFbFWqftEvk2NvDnHGQgixh8UzjfjZd5LkfZyLDIH1XbaEAlLPHvisP6LzD4/zJI9+1YUmjtTXkXYvQLaeYMzmndLDDquHfs1m8ZzC2ogIYFuiqZ5MLYt96U2Zgy65DY3OzTANLs4CulOuIamGLXo4LXJSXI17FI5RZfSDgrivdj5eZEiP6hdQeQrRdZCjzTWvM+Ig4oVBbYJ2+W/70WlJGsemjcJNGjb3xcss/AlmwpTT0Ow3JxKzKHNJhx2UKrB8eqfXdaGYeQwRNrdem5hExDnLlDRcg2ZBN6uko7shjTxbrUg8gqfT/Hl/hxXTVcTENY3dAx37sfNTT4HuCzMtJgYHyqUmBxg9XdDHyOyK/DqHhGr77GFCGUvsDNZ+Iz2qF0KxRZLgYlEoH92BXuMl0GrQGyOMRdhXUIRiyDRd6RQXIglNUE8qJEr/8cTP/3GGxaRESleWHbZKe+xrtYACQLsYmZ2JTEOUsWpcyJYfb1kDvB7YoPzQ3RefIQsV5rw/hT7EQUu300s=
