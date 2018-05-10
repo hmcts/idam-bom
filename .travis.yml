@@ -7,7 +7,7 @@ cache:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
 script:
-- ./gradlew build
+- ./gradlew publishToMavenLocal
 deploy:
 - provider: script
   script: ./gradlew bintrayUpload
