@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.2.4</version>
+    <version>1.2.5</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -14,7 +14,8 @@
 
     <properties>
         <!-- Dependency versions -->
-        <applicationinsights.version>[1.0.9]</applicationinsights.version>
+        <applicationinsights.version>2.1.1</applicationinsights.version>
+        <applicationinsights.spring-boot-starter.version>1.0.0-BETA</applicationinsights.spring-boot-starter.version>
         <azure.servicebus.version>1.1.2</azure.servicebus.version>
         <commons-cli.version>1.4</commons-cli.version>
         <commons-io.version>2.6</commons-io.version>
@@ -119,12 +120,12 @@
             </dependency>
             <dependency>
                 <groupId>com.microsoft.azure</groupId>
-                <artifactId>applicationinsights-web</artifactId>
-                <version>${applicationinsights.version}</version>
+                <artifactId>applicationinsights-spring-boot-starter</artifactId>
+                <version>${applicationinsights.spring-boot-starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.microsoft.azure</groupId>
-                <artifactId>applicationinsights-logging-log4j2</artifactId>
+                <artifactId>applicationinsights-web</artifactId>
                 <version>${applicationinsights.version}</version>
             </dependency>
             <dependency>
