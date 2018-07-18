@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.2.7</version>
+    <version>1.2.8</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -46,6 +46,9 @@
         <spring.boot.version>1.5.13.RELEASE</spring.boot.version>
         <springfox-swagger.version>2.7.0</springfox-swagger.version>
         <swagger.version>1.5.16</swagger.version>
+        <spring.cloud.feign.version>1.4.5.RELEASE</spring.cloud.feign.version>
+        <feign.httpclient.version>9.7.0</feign.httpclient.version>
+        <feign.form.version>3.3.0</feign.form.version>
     </properties>
 
     <dependencyManagement>
@@ -230,6 +233,22 @@
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-feign</artifactId>
+                <version>${spring.cloud.feign.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-httpclient</artifactId>
+                <version>${feign.httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign.form</groupId>
+                <artifactId>feign-form</artifactId>
+                <version>${feign.form.version}</version>
+            </dependency>
+
 
             <!-- Import dependency management from Spring Boot. Any overrides should be defined before this line -->
             <dependency>
