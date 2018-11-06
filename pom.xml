@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.3.1</version>
+    <version>1.3.2</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -25,7 +25,7 @@
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
         <httpclient.version>4.5.3</httpclient.version>
         <httpcore.version>4.4.6</httpcore.version>
-        <idam.api-spec.version>2.5.0</idam.api-spec.version>
+        <idam.api-spec.version>2.5.1</idam.api-spec.version>
         <idam.event.version>1.0.14-258</idam.event.version>
         <idam.spi.version>1.0.14-258</idam.spi.version>
         <jackson.version>2.9.5</jackson.version>
@@ -34,7 +34,7 @@
         <json-patch.version>1.9</json-patch.version>
         <json-smart.version>2.3</json-smart.version>
         <junit.version>4.12</junit.version>
-        <lombok.version>1.16.16</lombok.version>
+        <lombok.version>1.18.2</lombok.version>
         <mockito.version>2.8.9</mockito.version>
         <nimbus.version>4.41.2</nimbus.version>
         <notify.version>3.8.0-RELEASE</notify.version>
