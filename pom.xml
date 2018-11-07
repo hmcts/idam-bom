@@ -34,7 +34,7 @@
         <json-patch.version>1.9</json-patch.version>
         <json-smart.version>2.3</json-smart.version>
         <junit.version>4.12</junit.version>
-        <lombok.version>1.18.2</lombok.version>
+        <lombok.version>1.16.16</lombok.version>
         <mockito.version>2.8.9</mockito.version>
         <nimbus.version>4.41.2</nimbus.version>
         <notify.version>3.8.0-RELEASE</notify.version>
