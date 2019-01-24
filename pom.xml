@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.4.2</version>
+    <version>1.4.3</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -28,7 +28,7 @@
         <idam.api-spec.version>2.6.2</idam.api-spec.version>
         <idam.event.version>1.0.14-258</idam.event.version>
         <idam.spi.version>1.0.14-258</idam.spi.version>
-        <jackson.version>2.9.5</jackson.version>
+        <jackson.version>2.9.8</jackson.version>
         <javax-json.version>1.1</javax-json.version>
         <jjwt.version>0.6.0</jjwt.version>
         <json-patch.version>1.9</json-patch.version>
