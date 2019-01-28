@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.4.3</version>
+    <version>1.4.4</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -43,7 +43,7 @@
         <rest-assured.version>2.3.3</rest-assured.version>
         <retrofit.version>2.3.0</retrofit.version>
         <servlet.version>2.5</servlet.version>
-        <spring.boot.version>1.5.15.RELEASE</spring.boot.version>
+        <spring.boot.version>1.5.19.RELEASE</spring.boot.version>
         <springfox-swagger.version>2.7.0</springfox-swagger.version>
         <swagger.version>1.5.16</swagger.version>
         <spring.cloud.feign.version>1.4.5.RELEASE</spring.cloud.feign.version>
