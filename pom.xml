@@ -79,10 +79,6 @@
                 <artifactId>notifications-java-client</artifactId>
                 <version>${notify.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.hibernate.validator</groupId>
-                <artifactId>hibernate-validator</artifactId>
-            </dependency>
 
             <!-- Third party dependencies -->
             <dependency>
