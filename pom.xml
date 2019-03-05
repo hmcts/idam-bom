@@ -25,7 +25,7 @@
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
         <httpclient.version>4.5.3</httpclient.version>
         <httpcore.version>4.4.6</httpcore.version>
-        <idam.api-spec.version>2.7.2</idam.api-spec.version>
+        <idam.api-spec.version>2.7.3</idam.api-spec.version>
         <idam.event.version>1.0.14-258</idam.event.version>
         <idam.spi.version>1.0.14-258</idam.spi.version>
         <jackson.version>2.9.8</jackson.version>
