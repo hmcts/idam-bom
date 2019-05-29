@@ -28,7 +28,7 @@
         <idam.api-spec.version>2.9.0</idam.api-spec.version>
         <idam.event.version>1.0.14-258</idam.event.version>
         <idam.spi.version>1.0.14-258</idam.spi.version>
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.9.9</jackson.version>
         <javax-json.version>1.1.4</javax-json.version>
         <jjwt.version>0.6.0</jjwt.version>
         <json-patch.version>1.9</json-patch.version>
