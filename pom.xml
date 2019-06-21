@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.5.16</version>
+    <version>1.5.17</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -43,7 +43,8 @@
         <rest-assured.version>2.3.3</rest-assured.version>
         <retrofit.version>2.3.0</retrofit.version>
         <servlet.version>2.5</servlet.version>
-        <spring.boot.version>2.1.4.RELEASE</spring.boot.version>
+        <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
+        <spring.cloud.netflix.version>2.1.1.RELEASE</spring.cloud.netflix.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger.version>1.5.22</swagger.version>
         <spring.cloud.feign.version>2.1.0.RELEASE</spring.cloud.feign.version>
@@ -51,7 +52,7 @@
         <feign.form.version>3.7.0</feign.form.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
-        <forgerock.http.client.version>1.4.5</forgerock.http.client.version>
+        <forgerock.http.client.version>1.4.10</forgerock.http.client.version>
     </properties>
 
     <dependencyManagement>
@@ -123,6 +124,11 @@
                 <groupId>com.nimbusds</groupId>
                 <artifactId>nimbus-jose-jwt</artifactId>
                 <version>${nimbus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+                <version>${spring.cloud.netflix.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.microsoft.azure</groupId>
