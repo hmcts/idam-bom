@@ -53,7 +53,7 @@
         <feign.form.version>3.7.0</feign.form.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
-        <forgerock.http.client.version>1.5.3</forgerock.http.client.version>
+        <forgerock.http.client.version>1.5.4</forgerock.http.client.version>
     </properties>
 
     <dependencyManagement>
