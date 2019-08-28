@@ -95,7 +95,6 @@
                 <version>${commons-collections4.version}</version>
             </dependency>
 
-
             <!-- Third party dependencies -->
             <dependency>
                 <groupId>javax.json</groupId>
