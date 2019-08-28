@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.5.27</version>
+    <version>1.5.28</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -20,12 +20,13 @@
         <commons-io.version>2.6</commons-io.version>
         <commons-text.version>1.1</commons-text.version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
+        <commons-collections4.version>4.4</commons-collections4.version>
         <forgerock.am.version>14.0.0</forgerock.am.version>
         <forgerock.commons.version>21.2.0</forgerock.commons.version>
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
         <httpclient.version>4.5.3</httpclient.version>
         <httpcore.version>4.4.6</httpcore.version>
-        <idam.api-spec.version>2.12.2</idam.api-spec.version>
+        <idam.api-spec.version>2.12.3</idam.api-spec.version>
         <idam.event.version>1.0.14-258</idam.event.version>
         <idam.spi.version>1.0.14-258</idam.spi.version>
         <jackson.version>2.9.9</jackson.version>
@@ -87,6 +88,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections4.version}</version>
             </dependency>
 
             <!-- Third party dependencies -->
