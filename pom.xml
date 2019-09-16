@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.5.30</version>
+    <version>1.5.31</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -53,7 +53,10 @@
         <feign.form.version>3.7.0</feign.form.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
-        <forgerock.http.client.version>1.6.0</forgerock.http.client.version>
+        <forgerock.http.client.version>1.6.1</forgerock.http.client.version>
+        <guava.version>22.0</guava.version>
+        <caffeine.version>2.8.0</caffeine.version>
+        <serenity.version>2.0.71</serenity.version>
     </properties>
 
     <dependencyManagement>
@@ -313,6 +316,40 @@
                 <groupId>uk.gov.hmcts.reform.idam</groupId>
                 <artifactId>idam-forgerock-http-client</artifactId>
                 <version>${forgerock.http.client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <!-- caching -->
+
+            <dependency>
+                <groupId>com.github.ben-manes.caffeine</groupId>
+                <artifactId>caffeine</artifactId>
+                <version>${caffeine.version}</version>
+            </dependency>
+
+            <!-- serenity -->
+
+            <dependency>
+                <groupId>net.serenity-bdd</groupId>
+                <artifactId>serenity-rest-assured</artifactId>
+                <version>${serenity.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.serenity-bdd</groupId>
+                <artifactId>serenity-core</artifactId>
+                <version>${serenity.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.serenity-bdd</groupId>
+                <artifactId>serenity-junit</artifactId>
+                <version>${serenity.version}</version>
             </dependency>
 
             <!-- oltu oauth2 client Dependency -->
