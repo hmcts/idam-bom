@@ -5,8 +5,18 @@
 
 The IdAM BOM project provides Maven BOM file that can be used for managing the versions of the dependencies in IdAM 
 projects. This would ensure all projects always use a compatible stack.
-                                             
-## Usage
+
+## Building the BOM
+
+- Create feature branch from master.
+- Commit changes and update BOM version.
+- Open PR when ready.
+- Obtain successful Travis PR build.
+- Peer review and merge.
+- Checkout master and tag HEAD with `v<bom-version>` ie. `v1.6.6`
+- Obtain successful tag build in Travis
+
+## Usage the BOM
 
 There are 2 ways to use the BOM file:
 
