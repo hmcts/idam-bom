@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>1.6.6</version>
+    <version>1.7.0</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -26,7 +26,7 @@
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
         <httpclient.version>4.5.3</httpclient.version>
         <httpcore.version>4.4.6</httpcore.version>
-        <idam.api-spec.version>2.14.5</idam.api-spec.version>
+        <idam.api-spec.version>2.15.0</idam.api-spec.version>
         <idam.event.version>1.0.14-258</idam.event.version>
         <idam.spi.version>1.0.14-258</idam.spi.version>
         <jackson.version>2.9.9</jackson.version>
@@ -53,7 +53,7 @@
         <feign.form.version>3.7.0</feign.form.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
-        <forgerock.http.client.version>1.7.3</forgerock.http.client.version>
+        <forgerock.http.client.version>1.8.0</forgerock.http.client.version>
         <guava.version>22.0</guava.version>
         <caffeine.version>2.8.0</caffeine.version>
         <serenity.version>2.0.71</serenity.version>
