@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>2.0.1</version>
+    <version>2.1.0</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -14,7 +14,7 @@
 
     <properties>
         <!-- Dependency versions -->
-        <spring.boot.version>2.2.4.RELEASE</spring.boot.version>
+        <spring.boot.version>2.2.7.RELEASE</spring.boot.version>
 
         <!-- Dependency versions -->
         <applicationinsights.version>2.5.1</applicationinsights.version>
@@ -43,6 +43,10 @@
         <forgerock.http.client.version>2.0.1</forgerock.http.client.version>
         <guava.version>22.0</guava.version>
         <serenity.version>2.0.71</serenity.version>
+
+        <!-- Overrides and fixes -->
+        <!-- CVE-2020-9488 vulnerability, this and dep. management entry can be removed after SpringBoot upgrades to this or above -->
+        <log4j2.version>2.13.2</log4j2.version>
     </properties>
 
     <dependencyManagement>
@@ -166,6 +170,16 @@
                 <version>${jackson.version}</version>
                 <scope>import</scope>
                 <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-to-slf4j</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j2.version}</version>
             </dependency>
 
             <!-- Swagger dependencies -->
