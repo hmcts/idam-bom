@@ -38,6 +38,7 @@
         <swagger.version>1.5.22</swagger.version>
         <feign.httpclient.version>10.2.0</feign.httpclient.version>
         <feign.form.version>3.7.0</feign.form.version>
+        <feign.jackson.version>10.11</feign.jackson.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
         <forgerock.http.client.version>2.1.0</forgerock.http.client.version>
@@ -244,7 +245,7 @@
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-jackson</artifactId>
-                <version>10.11</version>
+                <version>${feign.jackson.version}</version>
             </dependency>
 
             <dependency>
