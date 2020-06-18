@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>2.2.0</version>
+    <version>2.2.1</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -36,7 +36,7 @@
         <retrofit.version>2.3.0</retrofit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger.version>1.5.22</swagger.version>
-        <feign.httpclient.version>10.2.0</feign.httpclient.version>
+        <feign.version>10.11.0</feign.version>
         <feign.form.version>3.7.0</feign.form.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
@@ -211,26 +211,30 @@
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-httpclient</artifactId>
-                <version>${feign.httpclient.version}</version>
+                <version>${feign.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-core</artifactId>
-                <version>${feign.httpclient.version}</version>
+                <version>${feign.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-okhttp</artifactId>
-                <version>${feign.httpclient.version}</version>
+                <version>${feign.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.openfeign</groupId>
                 <artifactId>feign-slf4j</artifactId>
-                <version>${feign.httpclient.version}</version>
+                <version>${feign.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.openfeign</groupId>
+                <artifactId>feign-jackson</artifactId>
+                <version>${feign.version}</version>
             </dependency>
 
             <!-- OpenFeign form dependencies -->
-
             <dependency>
                 <groupId>io.github.openfeign.form</groupId>
                 <artifactId>feign-form</artifactId>
