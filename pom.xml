@@ -33,7 +33,7 @@
         <nimbus.version>8.1</nimbus.version>
         <notify.version>3.8.0-RELEASE</notify.version>
         <okhttp.mockwebserver.version>3.10.0</okhttp.mockwebserver.version>
-        <retrofit.version>2.3.0</retrofit.version>
+        <retrofit.version>2.9.0</retrofit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger.version>1.5.22</swagger.version>
         <feign.version>10.7.0</feign.version>
