@@ -14,7 +14,7 @@
 
     <properties>
         <!-- Dependency versions -->
-        <spring.boot.version>2.2.8.RELEASE</spring.boot.version>
+        <spring.boot.version>2.4.2</spring.boot.version>
 
         <!-- Dependency versions -->
         <applicationinsights.version>2.5.1</applicationinsights.version>
@@ -25,7 +25,7 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
         <idam.api-spec.version>3.0.7</idam.api-spec.version>
-        <jackson.version>2.10.1</jackson.version>
+        <jackson.version>2.11.4</jackson.version>
         <javax-json.version>1.1.4</javax-json.version>
         <jjwt.version>0.6.0</jjwt.version>
         <json-patch.version>1.9</json-patch.version>
@@ -41,8 +41,8 @@
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
         <forgerock.http.client.version>2.4.2</forgerock.http.client.version>
-        <guava.version>22.0</guava.version>
-        <serenity.version>2.0.71</serenity.version>
+        <guava.version>30.1-jre</guava.version>
+        <serenity.version>2.3.13</serenity.version>
 
         <!-- Overrides and fixes -->
         <!-- CVE-2020-9488 vulnerability, this and dep. management entry can be removed after SpringBoot upgrades to this or above -->
