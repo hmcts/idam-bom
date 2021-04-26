@@ -20,7 +20,7 @@
         <applicationinsights.version>2.6.3</applicationinsights.version>
         <azure.servicebus.version>1.1.2</azure.servicebus.version>
         <commons-cli.version>1.4</commons-cli.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <commons-text.version>1.1</commons-text.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
