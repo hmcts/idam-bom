@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>2.7.1</version>
+    <version>2.8.0</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -15,12 +15,13 @@
     <properties>
         <!-- Dependency versions -->
         <spring.boot.version>2.4.8</spring.boot.version>
+        <spring.cloud.version>3.0.3</spring.cloud.version>
 
         <!-- Dependency versions -->
         <applicationinsights.version>2.5.1</applicationinsights.version>
         <azure.servicebus.version>1.1.2</azure.servicebus.version>
         <commons-cli.version>1.4</commons-cli.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.8.0</commons-io.version>
         <commons-text.version>1.1</commons-text.version>
         <commons-collections4.version>4.4</commons-collections4.version>
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
@@ -34,13 +35,15 @@
         <retrofit.version>2.3.0</retrofit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger.version>1.5.22</swagger.version>
-        <feign.version>10.7.0</feign.version>
+        <feign.version>10.11</feign.version>
         <feign.form.version>3.7.0</feign.form.version>
         <oltu.version>1.0.1</oltu.version>
         <brsanthu.migbase64.version>2.2</brsanthu.migbase64.version>
         <forgerock.http.client.version>2.5.1</forgerock.http.client.version>
         <guava.version>30.1-jre</guava.version>
         <serenity.version>2.3.31</serenity.version>
+        <junit.version>4.13.2</junit.version>
+        <snake.yaml.version>1.27</snake.yaml.version>
 
         <!-- Overrides and fixes -->
         <!-- CVE-2020-9488 vulnerability, this and dep. management entry can be removed after SpringBoot upgrades to this or above -->
@@ -69,6 +72,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
                 <version>${commons-collections4.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${snake.yaml.version}</version>
             </dependency>
 
             <!-- Third party dependencies -->
@@ -198,7 +206,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-openfeign</artifactId>
-                <version>${spring.boot.version}</version>
+                <version>${spring.cloud.version}</version>
             </dependency>
 
             <dependency>
@@ -274,6 +282,12 @@
                 <groupId>net.serenity-bdd</groupId>
                 <artifactId>serenity-junit</artifactId>
                 <version>${serenity.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
             </dependency>
 
             <!-- oltu oauth2 client Dependency -->
