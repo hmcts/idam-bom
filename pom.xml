@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>2.8.13</version>
+    <version>2.8.14</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -15,7 +15,7 @@
     <properties>
         <!-- Dependency versions -->
         <spring.boot.version>2.6.3</spring.boot.version>
-        <spring.cloud.version>3.0.3</spring.cloud.version>
+        <spring.cloud.version>3.1.0</spring.cloud.version>
 
         <!-- Dependency versions -->
         <applicationinsights.version>2.5.1</applicationinsights.version>
