@@ -6,7 +6,7 @@
 
     <groupId>uk.gov.hmcts.reform.idam</groupId>
     <artifactId>idam-bom</artifactId>
-    <version>2.8.16</version>
+    <version>2.8.17</version>
     <packaging>pom</packaging>
 
     <name>HMCTS IdAM Platform bill of materials</name>
@@ -14,7 +14,7 @@
 
     <properties>
         <!-- Dependency versions -->
-        <spring.boot.version>2.6.3</spring.boot.version>
+        <spring.boot.version>2.6.4</spring.boot.version>
         <spring.cloud.version>3.1.0</spring.cloud.version>
 
         <!-- Dependency versions -->
@@ -26,7 +26,6 @@
         <commons-collections4.version>4.4</commons-collections4.version>
         <hashicorp.vault.driver.version>3.0.0</hashicorp.vault.driver.version>
         <idam.api-spec.version>3.6.0</idam.api-spec.version>
-        <jackson.version>2.11.4</jackson.version>
         <javax-json.version>1.1.4</javax-json.version>
         <jjwt.version>0.6.0</jjwt.version>
         <json-patch.version>1.9</json-patch.version>
@@ -44,7 +43,6 @@
         <serenity.version>2.3.31</serenity.version>
         <junit.version>4.13.2</junit.version>
         <snake.yaml.version>1.27</snake.yaml.version>
-        <tomcat.version>9.0.58</tomcat.version>
     </properties>
 
     <dependencyManagement>
@@ -162,14 +160,6 @@
                 <artifactId>mockwebserver</artifactId>
                 <version>${okhttp.mockwebserver.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson</groupId>
-                <artifactId>jackson-bom</artifactId>
-                <version>${jackson.version}</version>
-                <scope>import</scope>
-                <type>pom</type>
-            </dependency>
-
             <!-- Swagger dependencies -->
 
             <dependency>
