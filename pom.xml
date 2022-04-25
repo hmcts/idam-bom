@@ -31,7 +31,7 @@
         <json-patch.version>1.9</json-patch.version>
         <notify.version>3.17.0-RELEASE</notify.version>
         <okhttp.mockwebserver.version>3.10.0</okhttp.mockwebserver.version>
-        <retrofit.version>2.3.0</retrofit.version>
+        <retrofit.version>2.5.0</retrofit.version>
         <springfox-swagger.version>2.9.2</springfox-swagger.version>
         <swagger.version>1.6.6</swagger.version>
         <feign.version>11.6</feign.version>
